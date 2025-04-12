@@ -48,7 +48,7 @@ curl -u user:password -X POST http://localhost:8080/api/calculate   -H "Content-
 ## 📦 Technology Stack
 
 - Java 17
-- Spring Boot
+- Spring Boot 3.4.4
 - Spring Security (Basic Auth)
 - Spring Validation
 - Spring Cache (in-memory)
@@ -140,8 +140,8 @@ mvn spotless:check       # Lint check (auto-fixable with apply)
 ---
 
 Includes JUnit tests for:
-- `DiscountService`
-- `CurrencyService` (mocking external API)
+- `BillDiscountService`
+- `CurrencyExchangeService` (mocking external API)
 - `BillController` (using MockMvc with auth)
 
 ---
