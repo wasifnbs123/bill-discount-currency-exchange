@@ -155,18 +155,19 @@ Currency exchange rates are cached via `@Cacheable("exchangeRates")` to reduce e
 ## 🧩 UML Diagram
 
 Core Classes:
-- `BillController`
-- DTOs: `BillRequest`, `Item`, `BillResponse`
+- Rest Controller: `BillController`
+- DTOs: `ItemBillRequest`, `Item`, `ItemBillResponse`
 - Enums: `UserType`
-- Services: `DiscountService`, `CurrencyService`
-- `GlobalExceptionHandler`
-- `SecurityConfig` (for Basic Auth)
+- Services: `BillDiscountService`, `CurrencyExchangeService`
+- Exception Handling: `GlobalExceptionHandler`
+- Bean : `AppConfig`
+- Authentication: `SecurityConfig` (for Basic Auth)
 
 
 ---
 
 ## 📝 Note
 
-Make sure to replace the exchange rate API key in `CurrencyService` if needed.
+Make sure to replace the exchange rate API key in `CurrencyExchangeService` if needed.
 
 ---
