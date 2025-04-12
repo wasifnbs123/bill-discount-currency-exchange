@@ -157,7 +157,7 @@ Currency exchange rates are cached via `@Cacheable("exchangeRates")` to reduce e
 Core Classes:
 - `BillController`
 - DTOs: `BillRequest`, `Item`, `BillResponse`
-- Enums: `UserType`, `ItemCategory`
+- Enums: `UserType`
 - Services: `DiscountService`, `CurrencyService`
 - `GlobalExceptionHandler`
 - `SecurityConfig` (for Basic Auth)
