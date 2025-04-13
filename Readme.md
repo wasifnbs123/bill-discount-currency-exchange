@@ -163,6 +163,7 @@ Core Classes:
 - Bean : `AppConfig`
 - Authentication: `SecurityConfig` (for Basic Auth)
 
+Please find attached UML documents in /docs.
 
 ---
 

@@ -1,0 +1,9 @@
+Relationship Summary:
+
+- BillController receives ItemBillRequest and returns ItemBillResponse.
+- ItemBillRequest includes a list of Item, a UserType, and customer tenure.
+- BillController uses:
+  - BillDiscountService to apply business discount logic.
+  - CurrencyExchangeService to convert currency.
+- GlobalExceptionHandler handles exceptions thrown anywhere in the application.
+- UserType is an enum referenced by both ItemBillRequest and BillDiscountService.
